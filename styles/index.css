@@ -1,0 +1,31 @@
+#nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+.navLi{
+    float: left;
+
+}
+.navA{
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+li.navLi .navA{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+li.navLi a:hover{
+    text-decoration: none;
+    background-color: green;
+}
+.active{
+    background-color: gray;
+}
