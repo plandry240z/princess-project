@@ -1,3 +1,13 @@
+:root{
+    --white: white;
+    --dark-gray: #333;
+    --lpink: #eac6d0;
+    --mpink: #eaa8b9;
+    --dpink: #f36f88;
+    --maroon: #9d173b;
+
+}
+
 #nav{
     list-style-type: none;
     margin: 0;
