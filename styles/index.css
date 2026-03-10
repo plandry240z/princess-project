@@ -1,28 +1,33 @@
 :root{
     --white: white;
     --dark-gray: #333;
-    --lpink: #eac6d0;
+    --xlpink: #ffe5ec;
+    --lpink: #ffc2d1;
     --mpink: #eaa8b9;
-    --dpink: #f36f88;
-    --maroon: #9d173b;
+    --dpink: #ff8fab;
+    --maroon: #E7456D;
 
+}
+body{
+    background-color:var(--xlpink);
+    margin:0;
+    padding:0;
 }
 
 #nav{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
+  display:flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  background-color: var(--white);
+  margin:0;
+    padding:0;
 }
 .navLi{
     float: left;
 
 }
 .navA{
-    color: white;
+    color: var(--dark-gray);
     display: block;
     text-decoration: none;
 }
@@ -34,8 +39,10 @@ li.navLi .navA{
 }
 li.navLi a:hover{
     text-decoration: none;
-    background-color: green;
+    background-color: var(--dpink);
+    color:var(--white);
 }
 .active{
-    background-color: gray;
+    background-color: var(--maroon);
+    color:var(--white);
 }
