@@ -4,30 +4,19 @@
     --xlpink: #ffe5ec;
     --lpink: #ffc2d1;
     --mpink: #eaa8b9;
-<<<<<<< Updated upstream
     --dpink: #ff8fab;
     --maroon: #E7456D;
-
-h1, h2, h3, h4, h5, h6{
-    font-family: cutivemono, monospace;
 }
+
 body{
     background-color:var(--xlpink);
     margin:0;
-    padding:0;    font-family: cutivemono, monospace;
-}
-
-h1, h2, h3, h4, h5, h6{
-    font-family: cutivemono, monospace;
-=======
-    --dpink: #f36f88;
-    --maroon: #9d173b;
+    padding:0;   
     font-family: cutivemono, monospace;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: cutivemono, monospace;
->>>>>>> Stashed changes
 }
 
 #nav{
