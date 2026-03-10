@@ -4,9 +4,18 @@
     --xlpink: #ffe5ec;
     --lpink: #ffc2d1;
     --mpink: #eaa8b9;
+<<<<<<< Updated upstream
     --dpink: #ff8fab;
     --maroon: #E7456D;
+=======
+    --dpink: #f36f88;
+    --maroon: #9d173b;
+    font-family: cutivemono, monospace;
+}
+>>>>>>> Stashed changes
 
+h1, h2, h3, h4, h5, h6{
+    font-family: cutivemono, monospace;
 }
 body{
     background-color:var(--xlpink);
