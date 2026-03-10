@@ -1,5 +1,4 @@
-{
-"questions":[
+[
         {"question": "What should I bring to a giveaway event? ","answer":"All Teens must show a valid high school ID, or any other proof of High School enrollment at check-in, to be admitted. We will also accept a photo or screenshot of your school ID if you do not have a physical card."},
         {"question":"Who can shop with you? ", "answer": "Unfortunately, due to maximum space capacity, only students who have a scheduled appointment will be admitted into the dress area.  We will have volunteers available to assist you."},
         {"question":"How long will the appointment be?", "answer": "To ensure every teen has a great experience, shopping is limited to your 1½-hour appointment window after check-in.Please arrive on time, bring your school ID or proof of enrollment, and make sure your waiver is submitted so you can use your full time to find the perfect dress and accessory.If you are under 18, a parent or guardian must submit a waiver before arrival or you will not be able to shop.We must close promptly after the final appointment of the day.With thousands of dresses in sizes 0–30, we’re confident you’ll find something amazing!"},
@@ -11,5 +10,4 @@
         {"question":"Can I book multiple appointments?", "answer": "To provide other students with the opportunity to shop at our boutique, once you attend and receive a dress, you may not sign up to return on another date. Multiple appointments will be automatically deleted."},
         {"question":"How do group appointments work?", "answer": "Group reservations must have a minimum of 15 students and must be able to book during the weekday.  For more information and requests, email Rebecca Flores at: Rebecca@princessproject.org"},
         {"question":"Any other questions?", "answer": "Please email: Rebecca@PrincessProject.org "}
-    ]
-}
+]
