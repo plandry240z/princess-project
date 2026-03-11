@@ -1,0 +1,10 @@
+{
+  "Members":[
+    {"position" : "President", "photo" : "", "name": "Rebecca Flores", "email": "Rebecca@PrincessProject.Org"},
+    {"position" : "Social Media Lead & Vice President", "photo" : "", "name": "Gabby Munoz", "email": "Gabby.Munoz@PrincessProject.Org"},
+    {"position" : "Inventory & Logistic Lead", "photo" : "", "name": "Christie Laborin", "email": "Christie.Laborin@PrincessProject.Org"},
+    {"position" : "Inventory & Logistic Lead", "photo" : "", "name": "Shirley Mcfaden", "email": "Shirley.McFaden@PrincessProject.Org"},
+    {"position" : "Partnership & Community Outreach Lead", "photo" : "", "name": "Christina Wayne", "email": "Christina.Wayne@PrincessProject.Org"},
+    {"position" : "Site & Partnerships", "photo" : "", "name": "Season Flores", "email": "Season.Flores@PrincessProject.Org"}
+  ]
+}
