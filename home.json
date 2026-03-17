@@ -6,5 +6,10 @@
     {"position" : "Inventory & Logistics", "photo" : "images/shirley.png", "name": "Shirley Mcfaden", "email": "Shirley.McFaden@PrincessProject.Org"},
     {"position" : "Partnership & Community", "photo" : "images/christina.png", "name": "Christina Wayne", "email": "Christina.Wayne@PrincessProject.Org"},
     {"position" : "Site & Partnerships", "photo" : "images/season.png", "name": "Season Flores", "email": "Season.Flores@PrincessProject.Org"}
+  ],
+  "Partners":[
+    {"name" : "President", "photo" : "images/rebecca.png", "desc": "Rebecca Flores"},
+    {"name" : "Social Media & Vice President", "photo" : "images/gabby.png", "desc": "Gabby Munoz"},
+    {"name" : "Inventory & Logistics", "photo" : "images/christie.png", "desc": "Christie Laborin"}
   ]
 }
