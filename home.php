@@ -60,11 +60,14 @@
             $div2 = $doc->createElement('div');//make div
             $div2->setAttribute('class','company');
 
+            $a=$doc->createElement('a'); 
+            $a->setAttribute('href', $partner['link']);
             $img= $doc->createElement('img');
-            $img->setAttribute('class','person');
+            $img->setAttribute('class','logo');
             $img->setAttribute('src', $partner['photo']);
             $img->setAttribute('alt', $partner['name']);
-            $div2->appendChild($img);
+            $a->appendChild($img);
+            $div2->appendChild($a);
             $desc = $doc->createElement('h6');//make h1 tag
             $desc->textContent = $partner['desc'];
             $div2->appendChild($desc);  //close
