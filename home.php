@@ -21,24 +21,27 @@
     $doc->loadHTMLFile("home.html"); //load
     libxml_clear_errors(); //clear errors
 
-    $main = $doc->getElementsByTagName('main')->item(0); //get main
+    $divMembers = $doc->getElementById('members'); //get members div
 
     foreach ($members as $member) { //for each article
         $div = $doc->createElement('div');//make div
         $div->setAttribute('class','boxes');
 
-        $h3 = $doc->createElement('h3');//make h1 tag
-        $h3->textContent = $member['position'];
-        $div->appendChild($h3);  //close
+        $position = $doc->createElement('h3');//make h1 tag
+        $position->textContent = $member['position'];
+        $div->appendChild($position);  //close
         $img= $doc->createElement('img');
         $img->setAttribute('class','person');
         $img->setAttribute('src', $member['photo']);
         $img->setAttribute('alt', $member['name']);
         $div->appendChild($img);
-
-
-
-        $main->appendChild($div);//close
+        $name = $doc->createElement('h4');//make h1 tag
+        $name->textContent = $member['name'];
+        $div->appendChild($name);  //close
+        $email = $doc->createElement('h6');//make h1 tag
+        $email->textContent = $member['email'];
+        $div->appendChild($email);  //close
+        $divMembers->appendChild($div);//close
     }
 
     header('Content-Type: text/html'); //change header

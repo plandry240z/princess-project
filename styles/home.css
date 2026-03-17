@@ -1,10 +1,18 @@
 main{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#members{
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    padding: 1% 2%;
 }
 
 .boxes {
@@ -14,11 +22,21 @@ main{
     background-color: var(--white);
     border-radius: 10px;
     align-items: center;
+    justify-content: center;
     text-align: center;
     width:250px;
     height:350px;
 }
 
+.boxes h3{
+    margin-bottom: 0.5rem;
+}
+.boxes h4{
+    margin-bottom: 0;
+}
+.boxes h6{
+    margin-top: 0.5rem;
+}
 
 .person{
     width: 100%;
