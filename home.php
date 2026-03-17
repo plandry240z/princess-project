@@ -30,7 +30,14 @@
         $h3 = $doc->createElement('h3');//make h1 tag
         $h3->textContent = $member['position'];
         $div->appendChild($h3);  //close
-        
+        $img= $doc->createElement('img');
+        $img->setAttribute('class','person');
+        $img->setAttribute('src', $member['photo']);
+        $img->setAttribute('alt', $member['name']);
+        $div->appendChild($img);
+
+
+
         $main->appendChild($div);//close
     }
 
