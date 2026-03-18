@@ -68,7 +68,7 @@
             $img->setAttribute('alt', $partner['name']);
             $a->appendChild($img);
             $div2->appendChild($a);
-            $desc = $doc->createElement('h6');//make h1 tag
+            $desc = $doc->createElement('h5');//make h1 tag
             $desc->textContent = $partner['desc'];
             $div2->appendChild($desc);  //close
             $div->appendChild($div2);
