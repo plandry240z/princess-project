@@ -1,0 +1,34 @@
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.faq-container{
+    padding-top: 10px;
+    columns:2;
+    gap: 50px;
+    width:90%;
+    margin: 0 auto;
+}
+.faq{
+    break-inside: avoid;
+    margin-bottom: 20px;
+}
+.faq button{
+    background-color: var(--dpink);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    width:100%;
+    border-radius: 10px;
+}
+
+.faq .answer{ 
+    padding: 10px;
+    background-color: var(--white);
+    border: 1px solid var(--dpink);
+    margin-top: 5px;
+    border-radius: 10px;
+}
