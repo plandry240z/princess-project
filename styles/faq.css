@@ -31,4 +31,10 @@ body{
     border: 1px solid var(--dpink);
     margin-top: 5px;
     border-radius: 10px;
+    display: none;
+    color:var(--dark-gray);
+}
+
+.faq .answer.active{
+    display: block;
 }

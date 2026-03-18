@@ -11,4 +11,11 @@ fetch('./scripts/faq.json')
             <div class="answer">${faq.answer}</div>
         </div>
         `).join(``);
+        //add click dropdown for questions
+        document.querySelectorAll('.question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                answer.classList.toggle('active');
+            });
+        }); 
     });
