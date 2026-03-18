@@ -1,0 +1,60 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dressList{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1% 2%;
+    margin-bottom: 2rem;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    padding: 1% 1%;
+    background-color: var(--white);
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    width:250px;
+    height:350px;
+    flex-shrink: 0;
+}
+.boxes h3{
+    margin-bottom: 0.5rem;
+    color: #8f0c2d; /*CHANGE*/
+}
+
+.tags{ /*list of tags*/
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+    margin: 1% 0%;
+    gap:1rem;
+}
+.tag{ /*tags - button like*/
+    display: flex;
+    background-color: var(--dpink);
+    color: var(--white);
+    border-radius: 4px;
+    padding: 0% 2%;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.dress{
+    max-width: 200px;
+    max-height: 250px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    object-fit: contain;
+}

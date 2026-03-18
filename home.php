@@ -2,7 +2,7 @@
     error_reporting(E_ALL & ~E_NOTICE); //clear errors
 
     if (!file_exists('home.json')) { //check if file found 
-        echo "Error: articles.json not found."; //error
+        echo "Error: home.json not found."; //error
         exit;
     }
 
