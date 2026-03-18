@@ -1,10 +1,10 @@
 {
 "Dresses":[
-    {"name" : "Red Slim Dress", "photo" : "images/dresses/red_dress.png", "tags": ["Hot News", "Celebrity", "Future"]},
-    {"name" : "Social Media & Vice President", "photo" : "images/home/gabby.png", "tags": ["Hot News", "Celebrity", "Future"]},
-    {"name" : "Inventory & Logistics", "photo" : "images/home/christie.png", "tags": ["Hot News", "Celebrity", "Future"]},
-    {"name" : "Inventory & Logistics", "photo" : "images/home/shirley.png", "tags": ["Hot News", "Celebrity", "Future"]},
-    {"name" : "Partnership & Community", "photo" : "images/home/christina.png", "tags": ["Hot News", "Celebrity", "Future"]},
-    {"name" : "Site & Partnerships", "photo" : "images/home/season.png", "tags": ["Hot News", "Celebrity", "Future"]}
+    {"name" : "Red Slip Dress", "photo" : "images/dresses/red_slip_dress.png", "tags": ["Red", "Long", "Slip", "Small"]},
+    {"name" : "Blue Chiffon Dress", "photo" : "images/dresses/blue_open_dress.png", "tags": ["Blue", "Chiffon", "Short", "SweetHeart", "Extra Large"]},
+    {"name" : "Purple Slip Dress", "photo" : "images/dresses/purple_slip_dress.png", "tags": ["Purple", "Long", "Slip", "Open Back"]},
+    {"name" : "Pink Chiffon Dress", "photo" : "images/dresses/pink_chiffon_dress.png", "tags": ["Pink", "Slip", "Short", "U Neck", "Fitting", "Medium"]},
+    {"name" : "Blue Slip Dress", "photo" : "images/dresses/blue_slip_dress.png", "tags": ["Blue", "Long", "Slip", "Medium"]},
+    {"name" : "Red Chiffon Dress", "photo" : "images/dresses/red_chiffon_dress.png", "tags": ["Blue", "Chiffon", "Short", "Fitting"]}
   ]
 }
