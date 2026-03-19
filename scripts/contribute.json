@@ -1,0 +1,136 @@
+{
+    "volunteer": {
+        "intro": [
+            "Volunteers are the heart of The Princess Project, helping make prom possible for Bay Area teens. Over 20 years, thousands of volunteers have supported 50,000+ students. As a fully volunteer-run organization, we rely on people like you.",
+            "<strong> New for 2026: </strong> Our updated platform lets you sign up for multiple shifts and easily manage your schedule.",
+            "<strong> Note: </strong> Volunteers must be 18+ and not currently in high school to participate in Dress Giveaway Sessions."
+        ],
+        "links": [
+            {
+                "label": "Dress Giveaway Volunteer Opportunities"
+            }
+        ],
+        "faq": [
+            {
+                "q": "Who can volunteer at PPSV?",
+                "a": "For Dress Giveaways, volunteers must be women ages 18+ and not currently in high school to serve as personal shoppers. If you’re under 18, you can still help during set-up or tear-down at designated “All Volunteer” sessions."
+            },
+            {
+                "q": "How do I volunteer?",
+                "a": "Click the link above to sign up! All volunteers must complete a 2026 waiver."
+            },
+            {
+                "q": "What should I wear?",
+                "a": "Most importantly...comfortable shoes and casual attire, as you will be on the move! Temperatures may vary depending on our location, so please plan accordingly."
+            },
+            {
+                "q": "What should I bring?",
+                "a": "You may bring bottled water, but no other food or drinks are allowed on the floor to protect the dresses. Please keep belongings minimal, as there is no secure storage available."
+            },
+            {
+                "q": "How will I know what to do?",
+                "a": "For Dress Giveaway sessions, there will be a volunteer shift leader who will give you instructions. Please arrive on time to allow for a brief orientation and questions. Plan to be on your feet for the entire shift."
+            },
+            {
+                "q": "Who can volunteer for ALL VOLUNTEER sessions?",
+                "a": "We welcome everyone who are at least 14 years or older to assist with setting up and taking down our boutique. Be prepared to moving, packing or unpacking boxes, lifting dresses, light cleaning, and organizing items."
+            },
+            {
+                "q": "What time should I arrive?",
+                "a": "Plan to arrive on time for your shift to allow time for check-in, volunteer orientation, and questions."
+            },
+            {
+                "q": "Where do I park?",
+                "a": "Our current location has free on-site parking, though it can be limited on weekends. Additional parking is also available behind the building with access to a breezeway connecting to the front."
+            },
+            {
+                "q": "Can I take photos?",
+                "a": "We have a beautiful, designated photo-op space at the site where we encourage photos. No photos are permitted in the dressing rooms when others are changing, and we ask that volunteers DO NOT take photos of our teen guests without permission from a PPSV lead."
+            },
+            {
+                "q": "Where do I check in?",
+                "a": "At the front desk upon entering the building."
+            },
+            {
+                "q": "What if I have items to donate?",
+                "a": "Donations are accepted any time that we are open. Please ensure that your donation is in line with our donation guidelines."
+            },
+            {
+                "q": "Corporate or group volunteering?",
+                "a": "If you are a company or philanthropy lead with a group that would like to volunteer during weekdays or on a specific day, please email Gabby Munoz at: Gabby.Munoz@PrincessProject.org"
+            }
+        ]
+    },
+
+    
+    "money": {
+        "intro": "Because The Princess Project is a 100% volunteer-led effort, your tax-deductible monetary donation directly supports the cost of producing this special event. Financial donations cover merchandise, signage, utilities, and dress storage.",
+        "goods": [
+            "<strong>Dresses</strong> We always need formal PROM dresses! If your organization wishes to host a dress drive, please refer to our dress guidelines.",
+            "<strong>Z-Racks</strong> By vendor: 'Only Hangers', Black Z Metal Clothes Rack 63 in. W x 84 in. Available at Home Depot online.",
+            "<strong>Hangers</strong> Must be Clear plastic Heavy Duty Dress hangers."
+        ]
+    },
+    "dress": {
+        "intro": [
+            "As you clean out your closets, think of The Princess Project and the new life and memories waiting to be breathed into your formal dresses. We are grateful to all of our donors!",
+            "We will <strong>only</strong> accept clean dresses that have been recently dry cleaned (unless brand new), or laundered, and in ideal wearable condition , without any stains or flaws.",
+            "<strong> New for 2026:</strong> We are accepting men's formal wear suits/tuxedos that are dry-cleaned or laundered (unless brand new) and in ideal wearable condition."
+        ],
+        "accept": [
+            "Current style dresses from <strong>2020 to present</strong>",
+            "PROM dresses, formal gowns, fancy party dresses (short & long), sizes 0–30+",
+            "Dresses must be dry-cleaned or recently laundered",
+            "New and like-new accessories",
+            "New or lightly-used dress shoes",
+            "New (unexpired) make-up",
+            "Wedding dresses (new or recently dry-cleaned, stain-free)",
+            "Men's formal wear suits/tuxedos (2026 new!)"
+        ],
+        "reject": [
+            "Vintage, out-of-style, or business wear dresses",
+            "Dresses NOT recently dry-cleaned or laundered",
+            "Dresses with stains, rips, or tears",
+            "Casual/work dresses or office attire"
+        ],
+        "location": "1653 W. San Carlos St., San Jose, CA 95128",
+        "schedule": [
+            {
+                "date": "Sunday, March 15, 2026",
+                "time": "10:30 AM – 1:00 PM"
+            },
+            {
+                "date": "Saturday, March 21, 2026",
+                "time": "10:00 AM – 1:00 PM"
+            },
+            {
+                "date": "Sunday, March 22, 2026",
+                "time": "11:30 AM – 1:30 PM"
+            },
+            {
+                "date": "Monday, March 23, 2026",
+                "time": "4:00 PM – 6:00 PM"
+            },
+            {
+                "date": "Wednesday, March 25, 2026",
+                "time": "4:00 PM – 6:00 PM"
+            },
+            {
+                "date": "Saturday, March 28, 2026",
+                "time": "9:00 AM – 1:30 PM"
+            },
+            {
+                "date": "Saturday, April 4, 2026",
+                "time": "9:00 AM – 12:30 PM"
+            },
+            {
+                "date": "Saturday, April 11, 2026",
+                "time": "9:00 AM – 12:30 PM"
+            },
+            {
+                "date": "Sunday, April 12, 2026",
+                "time": "9:00 AM – 11:00 AM"
+            }
+        ]
+    }
+}

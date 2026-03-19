@@ -6,20 +6,93 @@
         <title>Home</title>
         <link rel="stylesheet" href="styles/index.css">
         <link rel="stylesheet" href="styles/contribute.css">
+        <script src="scripts/contribute.js" defer></script>
     </head>
     <body>
         <ul id="nav">
-            <li class="navLi"><a class="navA" href="home.html">Home</a></li>
-            <li class="navLi"><a class="navA" href="dress.html">Get a Dress!</a> </li>
+            <li class="navLi"><a class="navA" href="home.php">Home</a></li>
+            <li class="navLi"><a class="navA" href="dress.php">Get a Dress!</a> </li>
             <li class="navLi"><a class="navA active" href="contribute.html">Contribute</a> </li>
             <li class="navLi"><a class="navA" href="faq.html">Contact Us</a> </li>
         </ul>
 
         <main>
-            <section class = "contribute">
-                <div class = "volunteer'>"
+            <div class="tabs">
+                <button class="tabbtn active" data-tab="volunteer">Give Time</button>
+                <button class="tabbtn" data-tab="money">Give Money</button>
+                <button class="tabbtn" data-tab="dress">Donate a Dress</button>
+            </div>
+
+            <section class="tabContent active" id="volunteer">
+                <div class="sectionHeader">
+                    <h2>Give Time</h2>
+                    <p class="subheading">Volunteer Sign-ups for the 2026 Prom Season are OPEN!</p>
+                </div>
+                <div class="card">
+                    <div id="volunteerIntro"></div>
+                    <div class="btnGroup">
+                        <a class="pinkBtn" href="https://princessproject.jotform.com/260251810797964" target="_blank">Dress Giveaway Volunteer Opportunities</a>
+                    </div>
+                </div>
+                <div class="sectionHeader">
+                    <h2>Volunteer FAQ</h2>
+                </div>
+                <div id="faqList"></div>
+            </section>
+
+            <section class="tabContent" id="money">
+                <div class="sectionHeader">
+                    <h2>Give Money or Goods</h2>
+                    <p class="subheading">Did you know that <strong>$25 sends one teen to prom?</strong></p>
+                </div>
+                <div class="card">
+                    <p id="moneyIntro"></p>
+                    <div class="btnGroup">
+                        <a class="pinkBtn" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ND898QV7JNB4S" target="_blank">Donate Here!</a>
+                    </div>
+                    <p class="smallNote">Be sure to select <strong>"Silicon Valley"</strong> in the Program drop-down menu.</p>
+                </div>
+                <div class="sectionHeader">
+                    <h2>Donate Goods</h2>
+                </div>
+                <div class="card">
+                    <ul class="styledList" id="goodsList"></ul>
+                </div>
+            </section>
+
+            <section class="tabContent" id="dress">
+                <div class="sectionHeader">
+                    <h2>Donate a Dress</h2>
+                    <p class="subheading">Give your formal dress a new life and new memories.</p>
+                </div>
+                <div class="card">
+                    <div id="dressIntro"></div>
+                </div>
+                <div class="twoCol">
+                    <div class="card">
+                        <h3>We Accept</h3>
+                        <ul class="styledList accept" id="acceptList"></ul>
+                    </div>
+                    <div class="card">
+                        <h3>We Cannot Accept</h3>
+                        <ul class="styledList reject" id="rejectList"></ul>
+                    </div>
+                </div>
+                <div class="sectionHeader">
+                    <h2>Drop-Off Location &amp; Times</h2>
+                </div>
+                <div class="card locationCard">
+                    <p id="dressLocation"></p>
+                    <p class="smallNote">Dates and times are subject to change. Check back for updates!</p>
+                    <div class="schedule-grid" id="scheduleGrid"></div>
+                    <div class="btnGroup">
+                        <a class="pinkBtn" href="https://www.princessprojectsiliconvalley.org/s/DonationReceipt2025.pdf" target="_blank">Print Tax Receipt</a>
+                    </div>
+                    <p class="smallNote">The Princess Project is a registered 501(c)3 nonprofit. Your donation is tax-deductible!</p>
+                </div>
             </section>
         </main>
+
         <footer>
             <p>Copyright &copy; 2026</p>
         </footer>
