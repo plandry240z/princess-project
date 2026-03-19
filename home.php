@@ -63,7 +63,7 @@
             $a=$doc->createElement('a'); 
             $a->setAttribute('href', $partner['link']);
             $img= $doc->createElement('img');
-            $img->setAttribute('class','logo');
+            $img->setAttribute('class','logoComp');
             $img->setAttribute('src', $partner['photo']);
             $img->setAttribute('alt', $partner['name']);
             $a->appendChild($img);
