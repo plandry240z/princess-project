@@ -19,3 +19,15 @@ fetch('./scripts/faq.json')
             });
         }); 
     });
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        // Get form data
+        const email = document.getElementById('email').value;
+        const reason = document.getElementById('reason').value;
+        const message = document.getElementById('message').value;
+
+        // Here you can add code to send the form data to your server or an email service
+        window.location.href = `mailto:infoppsv@princessproject.org?subject=Contact Form Submission&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+    });
