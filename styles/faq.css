@@ -3,6 +3,9 @@ body{
     flex-direction: column;
     align-items: stretch;
 }
+h2{
+    text-align: center;
+}
 .top{
     display:flex;
     flex-direction: row;
