@@ -4,21 +4,51 @@ fetch('./scripts/faq.json')
         //pull in skeleton
         const container = document.querySelector('.faq-container');
 
-        //map the questions and the answers
-        container.innerHTML = faqs.map(faq => `
-        <div class="faq">
-            <button class ="question">${faq.question}</button>
-            <div class="answer">${faq.answer}</div>
-        </div>
-        `).join(``);
-        //add click dropdown for questions
-        document.querySelectorAll('.question').forEach(button => {
-            button.addEventListener('click', () => {
-                const answer = button.nextElementSibling;
-                answer.classList.toggle('active');
+        //group by type
+        const groupedFaqs = faqs.reduce((acc, faq) => {
+            if (!acc[faq.type]) {
+                acc[faq.type] = [];
+            }
+            acc[faq.type].push(faq);
+            return acc;
+        }, {});
+
+        //create sections for each type
+        for (const type in groupedFaqs) {
+            const section = document.createElement('div');
+            section.classList.add('faq-section');
+
+            const header = document.createElement('h2');
+            header.textContent = type.charAt(0).toUpperCase() + type.slice(1);
+            section.appendChild(header);
+
+            groupedFaqs[type].forEach(faq => {
+                const faqItem = document.createElement('div');
+                faqItem.classList.add('faq');
+
+                const question = document.createElement('button');
+                question.classList.add('question');
+                question.textContent = faq.question;
+                faqItem.appendChild(question);
+
+                const answer = document.createElement('div');
+                answer.classList.add('answer');
+                answer.textContent = faq.answer;
+                faqItem.appendChild(answer);
+
+                question.addEventListener('click', () => {
+                  answer.classList.toggle('active');
+                });
+
+                section.appendChild(faqItem);
             });
-        }); 
-    });
+
+            container.appendChild(section);
+        }
+    })
+    .catch(error => console.error('Error loading FAQs:', error));
+
+// Handle contact form submission
 
     document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent the default form submission behavior
@@ -28,6 +58,6 @@ fetch('./scripts/faq.json')
         const reason = document.getElementById('reason').value;
         const message = document.getElementById('message').value;
 
-        // Here you can add code to send the form data to your server or an email service
-        window.location.href = `mailto:infoppsv@princessproject.org?subject=Contact Form Submission&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
-    });
+       // Create mailto link
+       window.location.href = `mailto:infoppsv@princessproject.org?subject=Contact Form Submission&body=Email: ${email}%0D%0AReason: ${reason}%0D%0AMessage: ${message}`;
+});
