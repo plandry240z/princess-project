@@ -2,32 +2,40 @@
 
 
 <html>
-    <head>
-        <title>Home</title>
-        <link rel="stylesheet" href="styles/index.css">
-        <link rel="stylesheet" href="styles/dress.css">
-        <script src="scripts/dress.js" defer></script>
-    </head>
-    <body>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/dress.css">
+    <script src="scripts/dress.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="home.php">
+            <img id="logo" src="images/princess.png" alt="The Princess Project Logo">
+        </a>
         <ul id="nav">
             <li class="navLi"><a class="navA" href="home.php">Home</a></li>
             <li class="navLi"><a class="navA active" href="dress.php">Get a Dress!</a> </li>
             <li class="navLi"><a class="navA" href="contribute.html">Contribute</a> </li>
             <li class="navLi"><a class="navA" href="faq.html">Contact Us</a> </li>
         </ul>
-        <main>
-            <div class="top"> <!--Top header-->
+    </header>
+    <main>
+        <div class="top"> <!--Top header-->
             <h3>You're looking for a ___ dress:</h3>
             <div class="searchedTags"></div>
             <input type="text" placeholder="Search Dresses..."> <!--Search bar-->
-            </div>
-            <div id="dressList">
-                
-            </div>
-        </main>
-        <footer>
-            <p>Copyright &copy; 2026</p>
-        </footer>
-        
-    </body>
+        </div>
+        <div id="dressList">
+
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2026</p>
+    </footer>
+
+</body>
+
 </html>
