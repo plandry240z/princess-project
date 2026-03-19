@@ -63,10 +63,17 @@ h2{
 }
 .faq-container{
     padding-top: 10px;
-    columns:2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
     gap: 50px;
     width:90%;
     margin: 0 auto;
+}
+.faq-split{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .faq{
     break-inside: avoid;

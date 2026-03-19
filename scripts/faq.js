@@ -13,14 +13,16 @@ fetch('./scripts/faq.json')
             return acc;
         }, {});
 
-        //create sections for each type
+        //split into left and right (appointment type questions on one side and other types on the other side)
+        const left = document.createElement('div');
+        left.classList.add('faq-split');
+        const right = document.createElement('div');
+        right.classList.add('faq-split');
         for (const type in groupedFaqs) {
-            const section = document.createElement('div');
-            section.classList.add('faq-section');
-
+            const side = type === 'appointments' ? left : right;
             const header = document.createElement('h2');
             header.textContent = type.charAt(0).toUpperCase() + type.slice(1);
-            section.appendChild(header);
+            side.appendChild(header);
 
             groupedFaqs[type].forEach(faq => {
                 const faqItem = document.createElement('div');
@@ -37,13 +39,14 @@ fetch('./scripts/faq.json')
                 faqItem.appendChild(answer);
 
                 question.addEventListener('click', () => {
-                  answer.classList.toggle('active');
+                    answer.classList.toggle('active');
                 });
 
-                section.appendChild(faqItem);
+                side.appendChild(faqItem);
             });
 
-            container.appendChild(section);
+            container.appendChild(left);
+            container.appendChild(right);
         }
     })
     .catch(error => console.error('Error loading FAQs:', error));
