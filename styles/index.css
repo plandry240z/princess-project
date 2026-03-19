@@ -59,3 +59,68 @@ li.navLi a:hover{
     background-color: var(--maroon);
     color:var(--white);
 }
+
+
+
+footer {
+    background-color: var(--dpink);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+footer img {
+    width: 36px;
+    height: 36px;
+}
+
+
+.footerLeft, .footerMiddle, .footerRight {
+    flex: 1;
+}
+
+.footerLeft a {
+    text-decoration: none;
+}
+
+.footerLeft img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+
+.footerMiddle {
+    text-align: center;
+}
+
+.footerMiddle p {
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+
+.footerRight {
+    text-align: right;
+}
+
+.footerRight a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerRight a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    footer {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding: 20px;
+    }
+}
