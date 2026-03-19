@@ -58,6 +58,7 @@ main{
     color: var(--maroon);
     font-size: 1rem;
     margin: 0;
+    margin-top: 16px;
     font-weight: bold;
 }
 
@@ -70,6 +71,9 @@ main{
     box-shadow: 0 2px 8px rgba(192, 57, 90, 0.08);
     color: var(--maroon);
     line-height: 1.7;
+    overflow: hidden;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .card h3 {
@@ -91,10 +95,14 @@ main{
 .twoCol {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    margin-bottom: 20px;
+    gap: 40px;
+    margin: 0 90px;;
 }
 
+.twoCol .card {
+    margin: 0;
+
+}
 /*buttons */
 .btnGroup {
     display: flex;
@@ -164,10 +172,15 @@ main{
 /* grid for calendar */
 .schedule-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin: 16px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.schedule-grid > * {
+    min-width: 0;
 }
 
 .schedule-item {
@@ -177,16 +190,25 @@ main{
     padding: 10px 14px;
     font-size: 0.88rem;
     color: var(--maroon);
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
 }
 
 .schedule-item .date {
     font-weight: bold;
     display: block;
     margin-bottom: 2px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .schedule-item .time {
     color: var(--maroon);
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 /* mini faq */
@@ -256,13 +278,38 @@ main{
 
 /* mobile friendly */
 @media (max-width: 700px) {
-    .twoCol {
+    .card,.twoCol {
+        margin: 0 10px 20px 10px;
+    }
+
+    .card {
+        padding: 18px 16px;
+        border-radius: 14px;
+        overflow: hidden;
+    }
+
+    .twoCol{
         grid-template-columns: 1fr;
     }
-    .tabContent {
-        padding: 20px 16px;
-    }
+
     #faqList {
         grid-template-columns: 1fr;
+        padding: 0 12px;
+    }
+
+    .schedule-grid {
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+    }
+
+    .schedule-item {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .pinkBtn {
+        width: 100%;
+        max-width: 260px;
+        padding: 12px 16px;
     }
 }
