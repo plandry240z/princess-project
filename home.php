@@ -1,12 +1,12 @@
 <?php
     error_reporting(E_ALL & ~E_NOTICE); //clear errors
 
-    if (!file_exists('home.json')) { //check if file found 
+    if (!file_exists('scripts/home.json')) { //check if file found 
         echo "Error: home.json not found."; //error
         exit;
     }
 
-    $array = file_get_contents('home.json');//load json array into php var step2
+    $array = file_get_contents('scripts/home.json');//load json array into php var step2
     $data = json_decode($array, true); //step3 decoding
 
     if ($data === null) {
