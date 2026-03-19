@@ -6,13 +6,40 @@ body{
 .top{
     display:flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     justify-content:center;
     gap:5%;
-    padding: 20px 0;
-    color:var(--dark-gray);
+}
+.top-left, .top-right{
+    width:45%;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.top-left a{
+    background-color: var(--dpink);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration:none;
+    width:100%;
 }
 
+.top-left a:hover{
+    background-color: var(--maroon);
+}
+
+.top-right h3{
+    margin: 0 auto;
+    background-color: var(--dpink);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
 #reason, #message, #email{
     padding: 10px;
     border-radius: 10px;
@@ -41,6 +68,7 @@ body{
 }
 
 .contact-form{
+    flex:1;
     text-align: center;
     color:var(--white);
     background-color: var(--lpink);
@@ -50,11 +78,11 @@ body{
     gap: 20px;
     padding: 20px;
     border-radius: 10px;
-    width:45%;
+    width:100%;
 }
 .map{
-    width:45%;
-    height:400px;
+    width:100%;
+    height: 100%;
     border: none;
     border-radius: 10px;
 }
