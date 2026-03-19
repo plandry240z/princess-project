@@ -1,0 +1,268 @@
+main{
+    background-color: var(--xlpink);
+    color: var(--maroon);
+}
+
+/* mini nav */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 20px;
+    flex-wrap: wrap;
+}
+
+.tabbtn {
+    background: white;
+    color: var(--maroon);
+    border: 2px solid var(--maroon);
+    border-radius: 30px;
+    padding: 10px 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tabbtn:hover,
+.tabbtn.active {
+    background-color: var(--maroon);
+    color: white;
+}
+
+.tabContent {
+    background-color: var(--xlpink);
+    display: none;
+    padding: 0;
+}
+
+.tabContent.active {
+    display: block;
+}
+
+/* titles */
+.sectionHeader {
+    border-radius: 12px;
+    margin: 30px 0 20px 0;
+    text-align: center;
+}
+
+.sectionHeader h2 {
+    color: var(--maroon);
+    font-size: 1.8rem;
+    margin: 0 0 6px 0;
+}
+
+.sectionHeader .subheading {
+    color: var(--maroon);
+    font-size: 1rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 28px 34px;
+    margin: 0 90px 20px 90px;
+    box-shadow: 0 2px 8px rgba(192, 57, 90, 0.08);
+    color: var(--maroon);
+    line-height: 1.7;
+}
+
+.card h3 {
+    color: var(--maroon);
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.card p {
+    margin: 0 0 14px 0;
+}
+
+.card p:last-child {
+    margin-bottom: 0;
+}
+
+/* columns for accept/reject list and faq */
+.twoCol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+/*buttons */
+.btnGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.pinkBtn {
+    display: inline-block;
+    background-color: var(--lpink);
+    color: white;
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 12px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 2px solid var(--maroon);
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.pinkBtn:hover {
+    background-color: var(--maroon);
+    color: white;
+}
+
+.pinkBtn.outline {
+    background-color: white;
+}
+
+.pinkBtn.outline:hover {
+    background-color: var(--maroon);
+    color: white;
+}
+
+
+.smallNote {
+    font-size: 0.85rem;
+    color: var(--maroon);
+    font-style: italic;
+    margin-top: 12px !important; /* i couldnt get this to work without */
+    text-align: center;
+}
+
+#dressLocation {
+    text-align: center;
+}
+
+.styledList {
+    padding: 0;
+    margin: 0;
+}
+
+.styledList li {
+    padding: 8px 0 8px 24px;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+.styledList li:last-child {
+    border-bottom: none;
+}
+
+/* grid for calendar */
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 10px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.schedule-item {
+    background: #fff0f4;
+    border: 1px solid var(--lpink);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 0.88rem;
+    color: var(--maroon);
+}
+
+.schedule-item .date {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.schedule-item .time {
+    color: var(--maroon);
+}
+
+/* mini faq */
+#faqList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+    width: 100%;
+    padding: 0 90px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.faqCol {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.faqItem {
+    align-self: start;
+    width: 100%;
+    break-inside: avoid;
+    margin-bottom: 0;
+}
+
+.faqQuestion {
+    background-color: var(--dpink);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: background 0.2s;
+}
+
+.faqQuestion:hover {
+    background-color: var(--dpink);
+}
+
+.faqAnswer {
+    display: none;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid var(--dpink);
+    margin-top: 5px;
+    border-radius: 10px;
+    color: var(--dark-gray);
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+.faqAnswer.active {
+    display: block;
+}
+
+.card a {
+    color: var(--maroon);
+    font-weight: bold;
+}
+
+
+/* mobile friendly */
+@media (max-width: 700px) {
+    .twoCol {
+        grid-template-columns: 1fr;
+    }
+    .tabContent {
+        padding: 20px 16px;
+    }
+    #faqList {
+        grid-template-columns: 1fr;
+    }
+}
