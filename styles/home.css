@@ -1,11 +1,11 @@
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#members{
+#members, #top {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -14,6 +14,37 @@ main{
     gap: 1rem;
     padding: 1% 2%;
     margin-bottom: 2rem;
+}
+
+#top{
+    width: 80%;
+    justify-content: space-between;
+    
+}
+
+.boxesTop {
+    display: flex;
+    flex-direction: column;
+    padding: 1% 2%;
+    background-color: var(--white);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    max-width: 40%;
+    height: auto;
+    min-height: 300px;
+}
+
+.header {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+#top li{
+    color: var(--maroon);
+    font-size:small;
 }
 
 .boxesMem {
@@ -25,21 +56,22 @@ main{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width:250px;
-    height:350px;
+    width: 90%;
+    max-width: 250px;
+    height: auto;
+    min-height: 350px;
 }
 
-.boxesMem h3{
+.boxesMem h3, h6 {
     margin-bottom: 0.5rem;
 }
-.boxesMem h4{
+
+.boxesMem h4 {
     margin-bottom: 0;
 }
-.boxesMem h6{
-    margin-top: 0.5rem;
-}
 
-.person{
+
+.person {
     width: 100%;
     max-width: 200px;
     height: 200px;
@@ -48,7 +80,7 @@ main{
 }
 
 /* Next section is partners*/
-#partners{
+#partners {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -69,14 +101,15 @@ main{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width:90%;
-    min-height:150px;
+    width: 90%;
+    min-height: 150px;
 }
-.boxesPart h3{
+
+.boxesPart h3 {
     margin-bottom: 0;
 }
 
-.company{
+.company {
     display: flex;
     flex-direction: row;
     padding: 1% 0%;
@@ -85,21 +118,57 @@ main{
     text-align: center;
     width: 95%;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--maroon);
 }
-h2{
+
+h2 {
     width: 100%;
 }
-.company h5{
+
+h5 {
     font-weight: normal;
 }
 
-.logo{
+.logo {
     max-width: 150px;
     height: 100px;
     border-radius: 10px;
     flex-shrink: 0;
     object-fit: contain;
     margin-right: 20px;
+    cursor: pointer;
+}
+.logo:hover{
+    border: 4px solid var(--maroon);
+    opacity: 0.8;
+}
+@media (max-width: 768px){
+    #top{
+        flex-direction: column;
+        width:95%
+    }
+    .boxesTop{
+        max-width: 90%;
+        width: 90%;
+    }
+    .company{
+        flex-direction:column;
+        align-items: center;
+    }
+    .logo{
+        margin-right: 0;
+    }
+    .boxesMem{
+        width:90%;
+        max-width: 250px;
+        height: auto;
+        min-width: 350px;
+    }
 }
