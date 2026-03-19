@@ -114,7 +114,9 @@ body{
     width:100%;
     border-radius: 10px;
 }
-
+.faq button:hover{
+    background-color: var(--maroon);
+}
 .faq .answer{ 
     padding: 10px;
     background-color: var(--white);
