@@ -3,13 +3,6 @@ body{
     flex-direction: column;
     align-items: stretch;
 }
-h2{
-    text-align: center;
-    background-color: var(--lpink);
-    padding: 10px;
-    color: var(--maroon);
-    border-radius:10px;
-}
 .top{
     display:flex;
     flex-direction: row;

@@ -19,6 +19,14 @@ h1, h2, h3, h4, h5, h6, button, form, input, textarea,select{
     font-family: cutivemono, monospace;
 }
 
+h2{
+    text-align: center;
+    background-color: var(--lpink);
+    padding: 10px;
+    color: var(--maroon);
+    border-radius:10px;
+}
+
 #nav{
   display:flex;
   justify-content: flex-end;

@@ -86,7 +86,10 @@ main{
     width: 95%;
 }
 h1,h2,h3,h4,h5,h6{
-    color: #8f0c2d;
+    color: var(--maroon);
+}
+h2{
+    width: 100%;
 }
 .company h5{
     font-weight: normal;

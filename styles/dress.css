@@ -30,7 +30,7 @@ main{
 }
 .boxes h3{
     margin-bottom: 0.5rem;
-    color: #8f0c2d; /*CHANGE*/
+    color: var(--maroon); /*CHANGE*/
 }
 
 .tags{ /*list of tags*/
