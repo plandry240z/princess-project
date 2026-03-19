@@ -2,7 +2,7 @@
     error_reporting(E_ALL & ~E_NOTICE); //clear errors
 
     if (!file_exists('home.json')) { //check if file found 
-        echo "Error: articles.json not found."; //error
+        echo "Error: home.json not found."; //error
         exit;
     }
 
@@ -68,7 +68,7 @@
             $img->setAttribute('alt', $partner['name']);
             $a->appendChild($img);
             $div2->appendChild($a);
-            $desc = $doc->createElement('h6');//make h1 tag
+            $desc = $doc->createElement('h5');//make h1 tag
             $desc->textContent = $partner['desc'];
             $div2->appendChild($desc);  //close
             $div->appendChild($div2);

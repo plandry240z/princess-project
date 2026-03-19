@@ -85,8 +85,11 @@ main{
     text-align: center;
     width: 95%;
 }
-.company h6{
-    flex: 1;
+h1,h2,h3,h4,h5,h6{
+    color: #8f0c2d;
+}
+.company h5{
+    font-weight: normal;
 }
 
 .logo{

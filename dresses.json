@@ -1,0 +1,16 @@
+{
+"Dresses":[
+    {"name" : "Red Slip Dress", "photo" : "images/dresses/red_slip_dress.png", "tags": ["Red", "Long", "Slip", "Small"]},
+    {"name" : "Blue Chiffon Dress", "photo" : "images/dresses/blue_open_dress.png", "tags": ["Blue", "Chiffon", "Short", "SweetHeart", "Extra Large"]},
+    {"name" : "Tan Ruffles Dress", "photo" : "images/dresses/tan_dress.png", "tags": ["Tan", "Ruffles", "Long", "Mermaid", "Medium"]},
+    {"name" : "Purple Slip Dress", "photo" : "images/dresses/purple_slip_dress.png", "tags": ["Purple", "Long", "Slip", "Open Back"]},
+    {"name" : "Black Ruffles Dress", "photo" : "images/dresses/black_dress.png", "tags": ["Black", "Ruffles", "Long", "Mermaid", "Extra Small"]},
+    {"name" : "Pink Chiffon Dress", "photo" : "images/dresses/pink_chiffon_dress.png", "tags": ["Pink", "Slip", "Short", "U Neck", "Fitting", "Medium"]},
+    {"name" : "Blue Slip Dress", "photo" : "images/dresses/blue_slip_dress.png", "tags": ["Blue", "Long", "Slip", "Medium"]},
+    {"name" : "Pink Ruffles Dress", "photo" : "images/dresses/pink_dress.png", "tags": ["Pink", "Ruffles", "Long", "Mermaid", "Small"]},
+    {"name" : "Red Chiffon Dress", "photo" : "images/dresses/red_chiffon_dress.png", "tags": ["Red", "Chiffon", "Short", "Fitting"]},
+    {"name" : "White Ruffles Dress", "photo" : "images/dresses/tan_dress.png", "tags": ["White", "Ruffles", "Long", "Mermaid", "Large"]},
+    {"name" : "Red Slip Dress", "photo" : "images/dresses/red_slip_dress.png", "tags": ["Red", "Long", "Slip", "Extra Large"]},
+    {"name" : "Blue Chiffon Dress", "photo" : "images/dresses/blue_open_dress.png", "tags": ["Blue", "Chiffon", "Short", "SweetHeart", "Small"]}
+  ]
+}
